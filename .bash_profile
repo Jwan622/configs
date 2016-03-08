@@ -1,7 +1,6 @@
-# My custom binaries
-export PATH="$HOME/bin:$PATH"
-
 # Load rvm so you can access Ruby
+export PATH="$HOME/bin:$PATH"
+export PATH=/usr/local/share/npm/bin:$PATH
 
 # Take you to the dir of a file in a gem. e.g. `2gem rspec`
 2gem () {
@@ -48,6 +47,8 @@ alias ghu="git push upstream"
 alias glo="git pull origin"
 alias glu="git pull upstream"
 
+alias glog='git log --graph --abbrev-commit --decorate --date=relative --format=format:"%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)" --all'
+
 # Jekyll aliases
 alias js="jekyll server"
 alias jb="jekyll build"
@@ -62,17 +63,19 @@ alias exercises="cd ~/Dropbox/programming/turing/ruby-exercises"
 alias projects="cd ~/Dropbox/programming/turing/projects"
 alias javascript="cd ~/Dropbox/programming/turing/extra_sessions/Javascript"
 alias warmups="cd ~/Dropbox/programming/turing/warmups"
+alias railss="cd ~/Dropbox/programming/rails"
 alias lessons4="cd ~/Dropbox/programming/turing/module_4_lessons"
 alias lessons3="cd ~/Dropbox/programming/turing/module_3_lessons"
 alias lessons2="cd ~/Dropbox/programming/turing/module_2_lessons"
 alias lessons1="cd ~/Dropbox/programming/turing/module_1_lessons"
 alias dsa="cd ~/Dropbox/programming/turing/data_structures_and_algorithms"
-
-#Directory aliases for Andela
-alias skilltree="cd ~/Dropbox/programming/andela/skilltree"
+alias maths="cd ~/Dropbox/personel_various/Learning/Math/linear_algebra"
+alias learning="cd ~/Dropbox/personel_various/Learning"
+alias journal="cd ~/Dropbox/personel_various/Stuff/Journal"
 
 #See SystemFiles
 alias bash="atom ~/.bash_profile"
+alias vimrc="atom ~/.vimrc"
 
 #rails aliases
 alias saob="save_and_open_branch"
@@ -99,9 +102,6 @@ function fullpath {
 
 # Enable git's tab-completion library
 source /usr/local/etc/bash_completion.d/git-completion.bash
-
-# Shortcut for bundle exec
-alias be="bundle exec"
 
 # Prompt
   function parse_git_branch {
