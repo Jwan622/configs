@@ -1,6 +1,9 @@
-# Load rvm so you can access Ruby
 export PATH="$HOME/bin:$PATH"
 export PATH=/usr/local/share/npm/bin:$PATH
+
+export EDITOR="/usr/local/bin/atom --wait"
+
+eval "$(rbenv init -)"
 
 # Take you to the dir of a file in a gem. e.g. `2gem rspec`
 2gem () {
@@ -58,23 +61,13 @@ alias hyolo="heroku pg:reset DATABASE && heroku run rake db:migrate && heroku ru
 
 #Directory aliases for Turing
 alias turing="cd ~/Dropbox/programming/turing"
-alias program="cd ~/Dropbox/programming"
-alias exercises="cd ~/Dropbox/programming/turing/ruby-exercises"
-alias projects="cd ~/Dropbox/programming/turing/projects"
-alias javascript="cd ~/Dropbox/programming/turing/extra_sessions/Javascript"
-alias warmups="cd ~/Dropbox/programming/turing/warmups"
-alias railss="cd ~/Dropbox/programming/rails"
-alias lessons4="cd ~/Dropbox/programming/turing/module_4_lessons"
-alias lessons3="cd ~/Dropbox/programming/turing/module_3_lessons"
-alias lessons2="cd ~/Dropbox/programming/turing/module_2_lessons"
-alias lessons1="cd ~/Dropbox/programming/turing/module_1_lessons"
-alias dsa="cd ~/Dropbox/programming/turing/data_structures_and_algorithms"
-alias maths="cd ~/Dropbox/personel_various/Learning/Math/linear_algebra"
-alias learning="cd ~/Dropbox/personel_various/Learning"
+alias freelance="cd ~/Desktop/freelance_work"
+alias arthouse="cd ~/Desktop/freelance_work/arthousecoop"
 alias journal="cd ~/Dropbox/personel_various/Stuff/Journal"
+alias programming="cd ~/Desktop/programming"
 
 #See SystemFiles
-alias bash="atom ~/.bash_profile"
+alias bash_profile="atom ~/.bash_profile"
 alias vimrc="atom ~/.vimrc"
 
 #rails aliases
@@ -154,4 +147,12 @@ export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 # Finished adapting your PATH environment variable for use with MacPorts.
 export PATH="/usr/local/bin:$PATH"
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+# Setting PATH for Python 3.6
+# The original version is saved in .bash_profile.pysave
+
+export PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
+
+# Setting PATH for Python 3.7
+# The original version is saved in .bash_profile.pysave
+PATH="/Library/Frameworks/Python.framework/Versions/3.7/bin:${PATH}"
+export PATH
